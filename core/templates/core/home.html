@@ -1,0 +1,20 @@
+{% extends 'core/base.html' %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% comment %} 
+    - Antes de utilizar un fichero estático hay que cargarlo en memoria.
+    - Colocar toda la sentencia en una sola línea para que cargen correctamente la imagen de
+ {% endcomment %}
+{% block img-background %}{% load static %}{% static 'core/img/home-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+    <h1>Juan Pérez</h1>
+    <span class="subheading">Ingeniero Industrial</span>
+{% endblock %}
+
+{% block content %}
+    <h1>Hola desde home</h1>
+{% endblock %}
